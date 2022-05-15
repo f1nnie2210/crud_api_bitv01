@@ -1,0 +1,38 @@
+swagger: "2.0"
+info:
+  version: "1.0"
+  title: USER MANAGEMENT SYSTEM CRUD API
+host: localhost:3000
+basePath: /
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /api/users:
+    get:
+      description: Get all users in database
+      summary: Get all users
+      operationId: getUsers
+      parameters: []
+      responses:
+        "200":
+          description: "Get users successfully"
+          schema:
+            type: "array"
+            items:
+              type: "string"
+    post:
+      description: Create new user save on database
+      summary: Create new user
+      operationId: createUsers
+      parameters: []
+      responses:
+        "200":
+          description: "Create user successfully"
+          schema:
+            type: "array"
+            items:
+              type: "string"
